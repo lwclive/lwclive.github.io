@@ -1,0 +1,43 @@
+:host {
+    --background-color: #fff;
+}
+
+table, th, td {
+    border: 1px solid black;
+    
+}
+.table-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+.pagination-btn {
+    background-color: rgb(29, 165, 97);
+    border: 0px solid #000;
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin: 2px 2px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.active {
+    background-color: #3c62dd;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}

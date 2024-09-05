@@ -1,0 +1,20 @@
+  .icon-back {
+    z-index: -1;
+    position: absolute;
+    bottom: 35px;
+  }
+
+  :host{
+
+    --header-background-color: var(--at-blue-12, #06223C);
+    --font-color: var(--body-font-color, #ffffff);
+}
+* {
+    --padding-left: 30px;
+}
+.home-container {
+    margin: 0;
+    background: var(--header-background-color);
+    color: var(--font-color);
+    padding: 20px 30px;
+}

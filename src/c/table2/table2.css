@@ -1,0 +1,20 @@
+:host {
+    --background-color: #fff;
+}
+
+table, th, td {
+    border: 1px solid black;
+    
+}
+.table-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}

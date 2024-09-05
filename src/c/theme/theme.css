@@ -1,0 +1,15 @@
+:host {
+    /*===== Brand Colors =====*/
+    --at-blue-0: #0C2644;
+    --at-blue-1: #003764;
+    --at-blue-2: #B8C7D2;
+    --at-blue-3: #5788AC;
+  
+}
+
+
+h1, h2 {
+    margin: 0;
+    padding: 4px 10px;
+}
+

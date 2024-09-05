@@ -1,0 +1,34 @@
+<template>
+    <div>
+        <div class="table-container">
+            <table >
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Savings</th>
+                    </tr>
+                </thead>
+                <tbody class="datatable">
+                    <template for:each={data} for:item="row">
+                        <tr key={row.id}>
+                            <td>{row.month}</td>
+                            <td>{row.savings}</td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="pagination-container">
+            <!-- {pagecount}  -->
+            <!-- {currentpage} -->
+            <!-- {allpages} -->
+            <template for:each={allpages} for:item="data">
+                <div key={data.id}>
+                    <div class={data.class}
+                    data-value={data.value} onclick={handlePageChange}>{data.value}</div>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

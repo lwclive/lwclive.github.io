@@ -1,0 +1,13 @@
+<template>
+    <div class="pagination-container">
+        <span class="hidden">{pageCount}</span> 
+        <!-- {currentPage} -->
+        <!-- {allPages.length} -->
+        <template for:each={allPages} for:item="data">
+            <div key={data.id}>
+                <div class={data.class}
+                data-value={data.value} onclick={handlePageChange}>{data.value}</div>
+            </div>
+        </template>
+    </div>
+</template>

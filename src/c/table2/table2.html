@@ -1,0 +1,32 @@
+<template>
+    <div id="table2">
+        <div class="table-container">
+            <template if:true={tableData}>
+                <table >
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>Savings</th>
+                        </tr>
+                    </thead>
+                    <tbody class="datatable">
+                        <template for:each={tableData} for:item="row">
+                            <tr key={row.id}>
+                                <td>{row.month}</td>
+                                <td>{row.savings}</td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+
+            </template>
+        </div>
+        
+        <c-pagination 
+            page-count={pageCount}
+            current-page={currentpage}
+            onclick={handlePageChange}
+        ></c-pagination>
+        
+    </div>
+</template>
